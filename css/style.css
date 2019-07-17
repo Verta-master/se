@@ -823,6 +823,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  margin-bottom: 70px;
 }
 .clauses__name {
   padding: 20px;
@@ -892,4 +893,104 @@ h3 {
   background-repeat: no-repeat;
   background-size: 40px 40px;
   background-position: center;
+}
+.gray {
+  padding-bottom: 80px;
+  background-color: #f8f8f8;
+}
+.teacher__wrapper {
+  text-align: center;
+}
+.teachers-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 270px;
+  height: 480px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px 5px rgba(1, 30, 74, 0.04);
+          box-shadow: 0 0 10px 5px rgba(1, 30, 74, 0.04);
+  border-bottom: 3px solid #faa703;
+}
+.teachers-photo-alt {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.teachers-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #011e4a;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.teachers-role p:nth-of-type(2) {
+  font-size: 14px;
+}
+.teachers-info:hover .teachers-name,
+.teachers-info:active .teachers-name {
+  color: #ec4e1f;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.help {
+  position: relative;
+  z-index: 1;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  text-align: center;
+  color: #fff;
+  background-color: #011e4a;
+  background-image: url(../img/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.help::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(1, 30, 74, 0.5);
+  z-index: 2;
+}
+.help__wrap {
+  position: relative;
+  z-index: 5;
+}
+.help__wrap p {
+  font-size: 26px;
+  font-weight: 700;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.help__wrap a {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  background-color: #ec4e1f;
+}
+.help__wrap a:hover,
+.help__wrap a:active {
+  background-color: #faa703;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
