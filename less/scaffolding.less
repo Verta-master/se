@@ -63,7 +63,23 @@ h1, h2, h3, h4, h5, h6 {
 
 h1,
 .center {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 70px;
+  margin-bottom: 70px;
   font-size: 36px;
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background-color: @yellow;
+  }
+}
+
+h3 {
+  color: @red;
 }
