@@ -7,6 +7,8 @@
   <title>Главная страница — Курсы восточных языков</title>
   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap&subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -287,7 +289,7 @@
     </div>
   </footer>
   
-  <div class="feedback_form order modal" id="call">
+  <div style="display: none;" class="feedback_form order modal" id="call">
     <p class="order__title">Заказать звонок</p>
     <form method="POST" enctype="multipart/form-data" action="http://china.lidstudio.ru/" class="order__form ajax">
       <input type="hidden" name="module" value="feedback">
@@ -313,6 +315,7 @@
   <script src="js/main.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script>
     var swiper = new Swiper('.promo__slider__block', {
       navigation: {
