@@ -224,6 +224,64 @@
 		</div>
   </div>
   
+  <div class="review">
+    <div class="wrapper review__wrap">
+      <div class="header__main">Отзывы наших студентов</div>
+      <div class="swiper-container review__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide review__slide">
+            <div class="review__top">
+              <figure class="review__img">
+                <img src="img/images/person.png" alt="Иван Петров">
+              </figure>
+              <div class="review__person">
+                <p class="review__name">Иван Петров</p>
+                <p class="review__title">Курс японского языка</p>
+                <span class="review__date">17.07.2019</span>
+              </div>
+            </div>
+            <div class="review__info">
+              <p>Текст отзыва</p>
+            </div>
+          </div>
+          <div class="swiper-slide review__slide">
+            <div class="review__top">
+              <figure class="review__img">
+                <img src="img/images/person.png" alt="Иван Петров">
+              </figure>
+              <div class="review__person">
+                <p class="review__name">Иван Петров</p>
+                <p class="review__title">Курс японского языка</p>
+                <span class="review__date">17.07.2019</span>
+              </div>
+            </div>
+            <div class="review__info">
+              <p>Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва</p>
+            </div>
+          </div>
+          <div class="swiper-slide review__slide">
+            <div class="review__top">
+              <figure class="review__img">
+                <img src="img/images/person.png" alt="Иван Петров">
+              </figure>
+              <div class="review__person">
+                <p class="review__name">Иван Петров</p>
+                <p class="review__title">Курс японского языка</p>
+                <span class="review__date">17.07.2019</span>
+              </div>
+            </div>
+            <div class="review__info">
+              <p>Текст отзыва</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination review__pagination"></div>
+      </div>
+      <div class="swiper-button-prev review__prev"></div>
+      <div class="swiper-button-next review__next"></div>
+    </div>
+  </div>
+  
   <footer class="footer">
 		<div class="wrapper footer__wrap">
 		  <div class="feedback_form order">
@@ -285,6 +343,7 @@
             </a>
           </li>
         </ul>
+        <p class="footer__comment">Разработка сайта <a href="lidstudio.ru">lidstudio.ru</a></p>
       </div>
     </div>
   </footer>
@@ -349,5 +408,21 @@
         slidesPerView: 3,
       }
       },
+    });
+    
+    var mySwiper = new Swiper ('.review__slider', {
+      pagination: {
+        el: '.review__pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.review__next',
+        prevEl: '.review__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 30,
     });
   </script>
