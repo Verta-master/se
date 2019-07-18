@@ -1245,6 +1245,8 @@ h3 {
 }
 .review__img img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 .review__person {
   width: calc(100% - 180px);
@@ -1454,6 +1456,11 @@ h3 {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+.news__info a,
+.news__info p,
+.news__info div {
+  max-width: 100%;
+}
 .title-3 {
   font-weight: 700;
   font-size: 20px;
@@ -1542,6 +1549,8 @@ h3 {
   width: calc(100% - 490px);
   padding: 20px;
 }
-.desc h3 {
+.desc h3,
+.desc p {
   text-align: left;
+  max-width: 100%;
 }
