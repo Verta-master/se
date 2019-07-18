@@ -622,6 +622,27 @@ h3 {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.contacts-data {
+  text-align: center;
+}
+.contacts-data a {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  color: #ec4e1f;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.contacts-data a:hover,
+.contacts-data a:active {
+  color: #011e4a;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.contacts-data strong {
+  letter-spacing: 0.075em;
+}
 .promo__slider__block {
   position: relative;
   width: 100%;
@@ -1101,6 +1122,21 @@ h3 {
 .privacy_field a:active {
   text-decoration: none;
 }
+.contacts-form {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  margin-top: 40px;
+}
+.contacts-form .privacy_field {
+  text-align: center;
+}
+.contacts-form .btn {
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .social {
   margin: 0;
   padding: 0;
@@ -1115,14 +1151,27 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
 }
-.social__item {
-  margin-right: 20px;
+.social--contacts {
+  margin-bottom: 80px;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.social__item:hover .social__link,
-.social__item:active .social__link {
+.social--contacts .social__link {
+  border: 1px solid #011e4a;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.social--contacts .social__link:hover,
+.social--contacts .social__link:active {
   color: #ec4e1f;
+  border-color: #ec4e1f;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
+}
+.social__item {
+  margin-right: 20px;
 }
 .social__link {
   width: 40px;
@@ -1141,6 +1190,12 @@ h3 {
   line-height: 1;
   background-color: #fff;
   border-radius: 50%;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.social__link:hover,
+.social__link:active {
+  color: #ec4e1f;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
