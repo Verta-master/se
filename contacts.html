@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-	
 	<body>
 		<div class="wrapper header__info">
 			<div class="logo">
@@ -37,48 +36,62 @@
 		
 		<div class="wrapper">
 			<div class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">
-			  <span typeof="v:Breadcrumb"><a href="http://china.lidstudio.ru/" rel="v:url" property="v:title">Главная</a> / </span> 
-			  <span typeof="v:Breadcrumb">Вопрос-Ответ</span>
-		  </div>
-		  
-			<h1>Вопрос-Ответ</h1>
-			<div class="faq_list">
-			  <div class="faq_block">
-			    <div class="faq_question faq-question">Могу ли я оплатить курс в рассрочку?</div>
-			    <div class="faq_answer faq-answer">
-			      <p>Конечно! Курс можно приобрести в рассрочку при заключении договора (записи на курс) и оплате 50 % (остальное вы оплачиваете через 5 недель после начала курса).</p>
-			    </div>
-			  </div>
-			  <div class="faq_block">
-			    <div class="faq_question faq-question">Как быть с учебными материалами?</div>
-			    <div class="faq_answer faq-answer">
-			      <p>Все учебные материалы предоставляются вам до начала курса в электронном виде. При желании, вы можете заказать печатные версии учебников через интернет-магазин.</p>
-			    </div>
-			  </div>
-			  <div class="faq_block">
-			    <div class="faq_question faq-question"> Могу ли я продлить доступ к видеоматериалам по моему курсу?</div>
-			    <div class="faq_answer faq-answer">
-			      <p>Да, конечно. Если вы записываетесь на следующий курс, то доступы к материалам возобновляется автоматически.</p>
-			    </div>
-			  </div>
-		  </div>
+        <span typeof="v:Breadcrumb"><a href="http://china.lidstudio.ru/" rel="v:url" property="v:title">Главная</a> / </span> 
+			  <span typeof="v:Breadcrumb">Контакты</span>
+			</div>
+			
+			<h1>Контакты</h1>
+			<div class="contacts-data">
+        <p>Тел.:&nbsp;
+          <strong><a class="tel" href="tel:+79215589398">+7 921 558-93-98</a></strong>&nbsp;
+          <strong><a class="tel" href="tel:+79213118657">+7 921 311-86-57</a></strong>
+        </p>
+        <p>E-mail: <a href="mailto:cantadorra@mail.ru%20">cantadorra@mail.ru</a></p>
+      </div>
+      <p class="social social--contacts">Мы в соцсетях: 
+        <a href="#" class="social__link"><i class="fab fa-vk"></i></a> 
+        <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a> 
+        <a href="#" class="social__link"><i class="fab fa-odnoklassniki"></i></a> 
+        <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+      </p>
+      
+      <h2>Остались вопросы? Напишите нам:</h2>
+      <div class="feedback_form contacts-form">
+        <form method="POST" enctype="multipart/form-data" action="" class="order__form ajax">
+          <input type="hidden" name="module" value="feedback">
+          <input type="hidden" name="action" value="add">
+          <input type="hidden" name="form_tag" value="feedbackc390ae654f9523353db7e35be6cf4beb">
+          <input type="hidden" name="site_id" value="153">
+          <input type="hidden" name="tmpcode" value="a5329a91ef79db75900bd9cab3d96e43">
+          <input type="text" name="p1" value="" class="order__input" placeholder="Ваше имя*" required>
+          <input type="email" name="p2" value=""  class="order__input" placeholder="Ваш e-mail" >
+          <input type="tel" name="p6" value=""  class="order__input" placeholder="Ваш телефон*" required>
+          <input type="text" name="p3" value="" class="order__input" placeholder="Ваше сообщение" >
+          <input name="p12" id="feedback_p12" value="1" type="checkbox" class="order__check">
+          <label class="order__label" for="feedback_p12">Я не робот<span style="color:red;">*</span></label>
+          <button type="submit" class="btn btn--white">Отправить</button>
+          <div class="privacy_field">Отправляя форму, я даю согласие на <a href="http://china.lidstudio.ru/privacy/">обработку персональных данных</a>.</div>
+        </form>
+        <div class="errors error" style="display:none"></div>
+      </div><br/>
 		</div>
 		
 		<div class="help">
 			<div class="wrapper help__wrap">
-				<p>Оставьте заявку, и мы расскажем о каждом из имеющихся у нас курсов</p>
+				<p>
+                  Оставьте заявку, и мы расскажем о каждом из имеющихся у нас курсов
+                </p>
 				<a data-fancybox="" data-src="#call" data-animation-effect="zoom-in-out" href="javascript:;" class="btn btn--white">Заказать звонок</a>
 			</div>
 		</div>
-		
 		<footer class="footer">
 			<div class="wrapper footer__wrap">
 				<div class="feedback_form order"><p class="order__title">Оставьте ваши имя и номер, и мы ответим на все интересующие вас вопросы!</p><form method="POST" enctype="multipart/form-data" action="" class="order__form ajax">
-<input type="hidden" name="module" value="feedback">
-<input type="hidden" name="action" value="add">
-<input type="hidden" name="form_tag" value="feedback3e7ab90ea8d6397cf7ef80b98851bcb2">
-<input type="hidden" name="site_id" value="161">
-<input type="hidden" name="tmpcode" value="ccb1d45fb76f7c5a0bf619f979c6cf36">
+        <input type="hidden" name="module" value="feedback">
+        <input type="hidden" name="action" value="add">
+        <input type="hidden" name="form_tag" value="feedback3e7ab90ea8d6397cf7ef80b98851bcb2">
+        <input type="hidden" name="site_id" value="161">
+        <input type="hidden" name="tmpcode" value="e23b16e83342d08d0d3ef4eeed9d3299">
 				<input type="text" name="p9" value="" class="order__input" placeholder="Ваше имя*" required>
 				<input type="tel" name="p10" value=""  class="order__input" placeholder="Ваш телефон*" required><input name="p11" id="feedback_p11" value="1" type="checkbox" class="order__check"><label class="order__label" for="feedback_p11">Я не робот<span style="color:red;">*</span></label><button type="submit" class="btn btn--white">Заказать звонок</button><div class="privacy_field">Отправляя форму, я даю согласие на <a href="http://china.lidstudio.ru/privacy/">обработку персональных данных</a>.</div></form><div class="errors error" style="display:none"></div>
 </div>
@@ -117,13 +130,13 @@
 			</div>
 		</footer>
 		
-		<div style="display: none;" class="feedback_form order modal" id="call">
-		  <p class="order__title">Заказать звонок</p><form method="POST" enctype="multipart/form-data" action="" class="order__form ajax">
+		<div style="display: none;" class="feedback_form order modal" id="call"><p class="order__title">Заказать звонок</p>
+      <form method="POST" enctype="multipart/form-data" action="" class="order__form ajax">
       <input type="hidden" name="module" value="feedback">
       <input type="hidden" name="action" value="add">
       <input type="hidden" name="form_tag" value="feedback3e7ab90ea8d6397cf7ef80b98851bcb2">
       <input type="hidden" name="site_id" value="161">
-      <input type="hidden" name="tmpcode" value="becc353586042b6dbcc42c1b794c37b6">
+      <input type="hidden" name="tmpcode" value="4d7e0d72898ae7ea3593eb5ebf20c744">
 				<input type="text" name="p9" value="" class="order__input" placeholder="Ваше имя*" required>
 				<input type="tel" name="p10" value=""  class="order__input" placeholder="Ваш телефон*" required><input name="p11" id="feedback_p11" value="1" type="checkbox" class="order__check"><label class="order__label" for="feedback_p11">Я не робот<span style="color:red;">*</span></label><button type="submit" class="btn btn--brown order__btn">Заказать звонок</button><div class="privacy_field">Отправляя форму, я даю согласие на <a href="http://china.lidstudio.ru/privacy/">обработку персональных данных</a>.</div></form><div class="errors error" style="display:none"></div>
     </div>
@@ -138,7 +151,10 @@
       });
     </script>
     <script type="text/javascript" src="js/jquery.scrollTo.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="http://china.lidstudio.ru/cache/js/e5261671647ec3c989200d033b84cc57.js" charset="UTF-8"></script>
     <script type="text/javascript"  src="http://china.lidstudio.ru/js/jquery.touchSwipe.min.js" charset="UTF-8"></script>
+    <script src="http://china.lidstudio.ru/cache/js/b07c6e9b040dec13b192c8a68c786973.js"></script><script type="text/javascript" src="http://china.lidstudio.ru/cache/js/f08544e4d97a04da8f9f79cc6893d963.js" charset="UTF-8"></script>
+	  <script asyncsrc="http://china.lidstudio.ru/cache/js/d8e55bfe4ae2a3a0d14081cdc98b00fb.js" type="text/javascript" charset="UTF-8"></script>
 		<script src="js/main.js"></script>
 		<script src="js/script.js"></script>
 	</body>

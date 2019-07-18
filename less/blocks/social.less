@@ -4,18 +4,29 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  
+  &--contacts {
+    margin-bottom: 80px;
+    margin-top: 30px;
+    justify-content: center;
+    
+    .social__link {
+      border: 1px solid @blue;
+      margin-left: 10px;
+      margin-right: 5px;
+      
+      &:hover,
+      &:active {
+        color: @red;
+        border-color: @red;
+        .transition();
+      }
+    }
+  }
 }
 
 .social__item {
   margin-right: 20px;
-  
-  &:hover,
-  &:active {
-    .social__link {
-      color: @red;
-      .transition();
-    }
-  }
 }
 
 .social__link {
@@ -30,4 +41,10 @@
   background-color: #fff;
   border-radius: 50%;
   .transition();
+  
+  &:hover,
+  &:active {
+    color: @red;
+    .transition();
+  }
 }

@@ -21,3 +21,25 @@
     }
   }
 }
+
+.contacts-data {
+  text-align: center;
+  
+  a {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    color: @red;
+    .transition();
+    
+    &:hover,
+    &:active {
+      color: @blue;
+      .transition();
+    }
+  }
+  strong {
+    letter-spacing: 0.075em;
+  }
+}
