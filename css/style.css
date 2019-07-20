@@ -1383,6 +1383,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
+.course__title,
 .faq_question {
   position: relative;
   padding: 20px 30px;
@@ -1396,18 +1397,22 @@ h3 {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.course__title::after,
 .faq_question::after {
   content: "+";
   position: absolute;
   top: 20px;
   right: 20px;
 }
+.course__title:hover,
 .faq_question:hover,
+.course__title:active,
 .faq_question:active {
   color: #ec4e1f;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.course__item__list,
 .faq_answer {
   display: none;
   padding: 20px 30px;
@@ -1553,4 +1558,79 @@ h3 {
 .desc p {
   text-align: left;
   max-width: 100%;
+}
+.course__list {
+  margin-bottom: 30px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.course__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 30px;
+}
+.course__item:last-child {
+  margin-bottom: 0;
+}
+.course__item .btn {
+  width: 200px;
+}
+.course__item__info {
+  width: calc(100% - 220px);
+}
+.course__item__info .title-3 {
+  color: #ec4e1f;
+  font-size: 18px;
+}
+.course__item__info .title-3 a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+.course__item__info .title-3 a:hover,
+.course__item__info .title-3 a:active {
+  border-color: #ec4e1f;
+}
+.course__item__info ul,
+.clauses_cat_text ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  list-style: none;
+  margin-top: 15px;
+}
+.course__item__info ul li,
+.clauses_cat_text ul li {
+  position: relative;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+.course__item__info ul li::before,
+.clauses_cat_text ul li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ec4e1f;
+}
+.clauses_cat_text {
+  margin-bottom: 80px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clauses_cat_text h2 {
+  margin-top: 50px;
+}
+.clauses_cat_text ul li strong {
+  color: #ec4e1f;
 }
